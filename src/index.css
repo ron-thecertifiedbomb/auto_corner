@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  button {
+    @apply border rounded-xl px-5 py-1
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
