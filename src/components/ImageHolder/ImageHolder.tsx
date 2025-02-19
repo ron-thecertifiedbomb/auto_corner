@@ -1,11 +1,11 @@
 import React from "react";
 
 interface ImageHolderProps {
-  src: string;
+  src?: string;
 }
 
 const ImageHolder: React.FC<ImageHolderProps> = ({ src }) => {
-  return <img className="w-full h-48 object-cover rounded-t-lg" src={src} alt="Car" />;
+  return <img className="w-full h-60 object-cover rounded-t-lg" src={src} alt="Car" />;
 };
 
 export default ImageHolder;

@@ -1,7 +1,7 @@
 import React from "react";
 
 interface TextProps {
-  item: string;
+  item?: string;
   variant?: "h1" | "h2" | "h3" | "h4" | "p"; // Defines different text sizes
   bold?: boolean; // Determines if text is bold
   margin?: string; // Allows custom margin classes

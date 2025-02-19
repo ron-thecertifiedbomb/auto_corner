@@ -58,7 +58,7 @@ export const data: CarItem[] = [
     ],
     availability: "In Stock",
     image:
-      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1561580125-028ee3bd62eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 50000,
   },
   {
@@ -179,4 +179,45 @@ export const data: CarItem[] = [
       "https://images.unsplash.com/photo-1630596369706-57eaf9ba7cae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 52000,
   },
+  {
+    id: 10,
+    make: "Porsche",
+    model: "911",
+    year: 2023,
+    type: "Coupe",
+    description:
+      "A high-performance sports coupe known for its iconic design and exhilarating performance.",
+    features: [
+      "Turbocharged engine",
+      "Rear-engine layout",
+      "Lightweight design",
+      "Advanced aerodynamics",
+      "Luxurious interior",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1593353798398-6024b7444bb6?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 120000,
+  },
+  {
+    id: 11,
+    make: "Dodge",
+    model: "Ram 1500",
+    year: 2023,
+    type: "Truck",
+    description:
+      "A robust pickup truck offering impressive towing capacity, modern features, and rugged durability.",
+    features: [
+      "V8 engine",
+      "Towing package",
+      "Off-road capability",
+      "Spacious cabin",
+      "Advanced safety features",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1676067926577-e65f135e7799?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 55000,
+  },
+  
 ];

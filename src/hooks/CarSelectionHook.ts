@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { CartItem } from "../types";
+
 import { data } from "../utils/cars";
 import { filterAndSortData } from "../utils/FilterAndSort";
+import { CarItem } from "../types";
 const useCarHook = () => {
   const [cars, setCars] = useState(data);
   const [activeCategory, setActiveCategory] = useState<string | null>('All');
   const [sortOrder, setSortOrder] = useState("default");
-  const [selectedItem, setSelectedItem] = useState<CartItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<CarItem | undefined>();
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSortPrice = (sort: string) => {
-    setSortOrder(sort);
-    setCars(filterAndSortData(data, activeCategory, sort));
+  const handleSortPrice = (type: string) => {
+    setSortOrder(type);
+    setCars(filterAndSortData(data, activeCategory, type));
   };
 
   const filterType = (type: string | null) => {
@@ -26,7 +27,7 @@ const useCarHook = () => {
         : "border-black text-black-600 hover:bg-black  hover:text-white"
     }`;
 
-  const openCarDetails = (item: CartItem) => {
+  const openCarDetails = (item: CarItem) => {
     setSelectedItem(item);
     setIsOpen(true);
   };

@@ -1,35 +1,27 @@
 import React from "react";
 import ImageHolder from "../ImageHolder/ImageHolder";
 import Text from "../Text/Text";
-
-interface CarItem {
-  id: number;
-  make: string;
-  model: string;
-  year: number;
-  description: string;
-  features: string[];
-  availability: string;
-  image: string;
-  price: number;
-}
+import { CarItem } from "../../types";
 
 interface CardProps {
-  item: CarItem; // Accept a single car object
+  openCarDetails: (item: CarItem) => void;
+  item: CarItem;
 }
 
-const Card: React.FC<CardProps> = ({ item }) => {
+const Card: React.FC<CardProps> = ({ item, openCarDetails }) => {
   return (
-    <div className="shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer bg-white p-4">
+    <div
+      className="shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer bg-white p-4"
+      onClick={() => openCarDetails(item)}
+    >
       <ImageHolder src={item.image} />
-      <div className="flex flex-col p-4">
-        <div className="flex gap-2 items-center">
+      <div className="flex flex-col p-2">
+        <div className="flex gap-1 items-center">
           <Text item={item.make} variant="h2" bold />
           <Text item={item.model} variant="h3" />
         </div>
-
         <Text item={item.description} margin="mb-1" />
-        <Text item={item.price.toLocaleString()} bold />
+        <Text item={`PhP ${item.price.toLocaleString()}`} />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const CarouselDots: React.FC<CarouselDotsProps> = ({ imagesLength, currentIndex,
        <button
        key={index}
        onClick={() => onClick(index)}
-       className={`w-[3px] h-3 rounded-full ${
+       className={`w-1 h-1 ${
          currentIndex === index ? "bg-gray-500" : "bg-gray-300"
        } transition-colors duration-300 border-none`}
      />

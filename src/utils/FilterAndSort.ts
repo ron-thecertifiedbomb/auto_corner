@@ -7,17 +7,17 @@ export const getPriceValue = (price: number | string): number => {
 export const filterAndSortData = (
   data: CarItem[],
   type: string | null,
-  price: string
+  order: string
 ): CarItem[] => {
   let filteredData = type
     ? data.filter((item) => item.type === type)
     : [...data];
 
-  if (price === "highToLow") {
+  if (order === "highToLow") {
     filteredData.sort(
       (a, b) => getPriceValue(b.price) - getPriceValue(a.price)
     );
-  } else if (price === "lowToHigh") {
+  } else if (order === "lowToHigh") {
     filteredData.sort(
       (a, b) => getPriceValue(a.price) - getPriceValue(b.price)
     );
