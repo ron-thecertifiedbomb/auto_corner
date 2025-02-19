@@ -3,7 +3,7 @@ import RowLayout from "../../RowLayout/RowLayout";
 import Text from "../../Text/Text";
 
 interface CardTitleProps {
-  item?: CarItem
+  item: CarItem | undefined;
 }
 
 

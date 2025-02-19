@@ -1,17 +1,23 @@
-import { CarItem } from "../../types";
-import Card from "../Card/Card";
+import React from "react";
 
-interface ListProps {
-  item: CarItem[];
-  openCarDetails: (item: CarItem) => void;
+interface ListProps<T> {
+  items: T[];
+  // openCarDetails is optional
+  openCarDetails?: (item: T) => void;
+  // ItemComponent is a component that accepts a single item of type T and optionally openCarDetails
+  ItemComponent: React.ComponentType<{ item: T; openCarDetails?: (item: T) => void }>;
 }
 
-const List = ({ item, openCarDetails }: ListProps) => {
+const List = <T,>({ items, openCarDetails, ItemComponent }: ListProps<T>) => {
   return (
     <div className="max-w-[1640px] mx-auto w-full max-w-4xl h-120 pt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {item.map((car) => (
-          <Card key={car.id} item={car} openCarDetails={openCarDetails} />
+        {items.map((item, index) => (
+          <ItemComponent
+            key={index}
+            item={item}
+            openCarDetails={openCarDetails}
+          />
         ))}
       </div>
     </div>

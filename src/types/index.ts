@@ -20,3 +20,8 @@ export interface CarItem {
 export interface CartItemQuantity extends CarItem {
   quantity: number;
 }
+
+
+export interface CarFeatures extends CarItem {
+  features: string[];
+}

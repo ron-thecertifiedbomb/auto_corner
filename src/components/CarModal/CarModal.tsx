@@ -1,13 +1,15 @@
 import { CarItem } from "../../types";
 import ImageHolder from "../ImageHolder/ImageHolder"; // Adjust the path as needed
-import Text from "../Text/Text";
+import CarFeaturesList from "../List/CarFeatureList";
 import CardDescription from "./Layout/CardDesctiption";
 import CardTitle from "./Layout/CardTitle";
+import Text from "../Text/Text";
+
 type CarDetailsModalType = {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
-  item: CarItem | undefined;
-};
+  item: CarItem
+}
 
 const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
   if (!isOpen) return null;
@@ -18,12 +20,14 @@ const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="bg-white p-6 rounded-lg shadow-lg h-100 w-130 relative flex flex-col"
+        className="bg-white p-8 rounded-lg shadow-lg w-130 relative flex flex-col"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
       >
         <ImageHolder src={item?.image} />
         <CardTitle item={item} />
         <CardDescription item={item} />
+        <Text item={"Technical Specifactions:"} variant="p" margin='mb-2' bold />
+        <CarFeaturesList  item={item} />
       </div>
     </div>
   );

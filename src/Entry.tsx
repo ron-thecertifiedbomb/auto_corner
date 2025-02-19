@@ -1,11 +1,13 @@
+import Card from "./components/Card/Card";
 import CarModal from "./components/CarModal/CarModal";
 import Carousel from "./components/Carousel/Carousel";
 import FilterControls from "./components/FilterControls/FilterControls";
 import List from "./components/List/List";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar/Navbar";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import useCarHook from "./hooks/CarSelectionHook";
-
+import { data } from "./utils/cars";
+import UnorderedCarList from "./components/List/CarFeatureList";
 const Entry = () => {
   const {
     filterType,
@@ -34,7 +36,8 @@ const Entry = () => {
         getButtonClass={getButtonClass}
         handleSortPrice={handleSortPrice}
       />
-      <List item={cars} openCarDetails={openCarDetails}/>
+         <List items={cars} openCarDetails={openCarDetails} ItemComponent={Card} />
+    
       <CarModal item={selectedItem} isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
   );

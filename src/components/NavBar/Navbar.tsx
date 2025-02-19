@@ -1,4 +1,5 @@
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar";
+
 
 const Navbar = () => {
   return (

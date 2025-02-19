@@ -4,7 +4,7 @@ import Text from "../Text/Text";
 import { CarItem } from "../../types";
 
 interface CardProps {
-  openCarDetails: (item: CarItem) => void;
+  openCarDetails?: (item: CarItem) => void;
   item: CarItem;
 }
 
@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ item, openCarDetails }) => {
   return (
     <div
       className="shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer bg-white p-4"
-      onClick={() => openCarDetails(item)}
+      onClick={() => openCarDetails && openCarDetails(item)}
     >
       <ImageHolder src={item.image} />
       <div className="flex flex-col p-2">
