@@ -1,8 +1,6 @@
 import '@testing-library/jest-dom';
-import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Button from '../Button/Button';
-
 
 describe("Button Component", () => {
   // Create mock functions for onClick and getButtonClass

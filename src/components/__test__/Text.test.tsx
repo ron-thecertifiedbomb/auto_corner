@@ -1,7 +1,8 @@
-
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Text from "../Text/Text"; // Adjust path based on your folder structure
+import Text from "../Text/Text"; 
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from "react";
 
 describe("Text Component", () => {
