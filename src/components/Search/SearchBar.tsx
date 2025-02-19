@@ -3,12 +3,15 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { CarItem } from "../../types";
 import { data } from "../../utils/cars";
 import SearchResults from "./SearchResult";
-import useCarHook from "../../hooks/CarSelectionHook";
 
-const SearchBar = () => {
 
-    
-  const { isOpen, selectedItem, setIsOpen, openCarDetails } = useCarHook();
+type SearchBarType = {
+
+  setIsOpen: (isOpen: boolean) => void;
+  openCarDetails?: (item: CarItem) => void;
+};
+
+const SearchBar = ({ setIsOpen, openCarDetails}: SearchBarType) => {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState<CarItem[]>([]);
@@ -37,16 +40,8 @@ const SearchBar = () => {
           value={searchQuery}
         />
         <AiOutlineSearch size={25} />
-        <SearchResults
-          products={filteredProducts}
-          searchQuery={searchQuery}
-          onClear={(item: CarItem) => {
-            openCarDetails(item);
-            setSearchQuery("");
-          }}
-        />
+        <SearchResults items={filteredProducts} searchQuery={searchQuery} openCarDetails={openCarDetails} setSearchQuery={setSearchQuery} setIsOpen={setIsOpen} />
       </div>
-      
     </>
   );
 };

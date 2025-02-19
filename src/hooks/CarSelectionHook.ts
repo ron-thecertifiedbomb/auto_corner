@@ -29,7 +29,8 @@ const useCarHook = () => {
 
   const openCarDetails = (item: CarItem) => {
     setSelectedItem(item);
-    setIsOpen(true);
+    console.log(isOpen)
+    console.log('item', item)
   };
 
   return {
@@ -42,7 +43,7 @@ const useCarHook = () => {
     filterType,
     getButtonClass,
     openCarDetails,
-    setIsOpen,
+    setIsOpen
   };
 };
 

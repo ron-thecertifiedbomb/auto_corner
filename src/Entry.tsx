@@ -21,7 +21,7 @@ const Entry = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar setIsOpen={setIsOpen} openCarDetails={openCarDetails} />
       <Carousel />
       <SectionTitle
         title="Auto Section"

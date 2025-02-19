@@ -12,6 +12,8 @@ type CarDetailsModalType = {
 };
 
 const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
+  
+
   if (!isOpen) return null;
 
   return (

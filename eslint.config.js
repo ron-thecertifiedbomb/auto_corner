@@ -31,6 +31,19 @@ export default tseslint.config(
       ],
       // Disable this rule because the new JSX transform doesn't require React in scope
       'react/react-in-jsx-scope': 'off',
+
+      // Add the @typescript-eslint/no-unused-vars rule to catch unused variables
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          vars: 'all',
+          args: 'after-used',
+          ignoreRestSiblings: false,
+          // If you use underscore-prefixed variables that are intentionally unused, you can ignore them:
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
     },
   },
 )
