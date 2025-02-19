@@ -1,3 +1,5 @@
+import { CarItem } from "../types";
+
 export const data: CarItem[] = [
   {
     id: 1,
@@ -53,7 +55,64 @@ export const data: CarItem[] = [
     ],
     availability: "In Stock",
     image:
-      "https://images.unsplash.com/photo-1575733135961-39fb82b34f86?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 50000,
+  },
+  {
+    id: 4,
+    make: "Jeep",
+    model: "Wrangler",
+    year: 2022,
+    description:
+      "An off-road capable SUV designed for adventure and rugged terrain.",
+    features: [
+      "4x4 drivetrain",
+      "Removable doors and roof",
+      "Off-road tires",
+      "High ground clearance",
+      "Touchscreen infotainment",
+    ],
+    availability: "Limited Stock",
+    image:
+      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 39000,
+  },
+  {
+    id: 5,
+    make: "BMW",
+    model: "X5",
+    year: 2023,
+    description:
+      "A luxury SUV with high-performance capabilities and premium features.",
+    features: [
+      "All-wheel drive",
+      "Leather interior",
+      "Panoramic sunroof",
+      "Advanced driver-assist features",
+      "Premium sound system",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1609184166822-bd1f1b991a06?q=80&w=2699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 65000,
+  },
+  {
+    id: 6,
+    make: "Chevrolet",
+    model: "Silverado",
+    year: 2022,
+    description:
+      "A tough and reliable pickup truck with high towing capacity and durability.",
+    features: [
+      "V8 engine",
+      "4x4 capability",
+      "Large cargo bed",
+      "Towing package",
+      "Infotainment system with Apple CarPlay & Android Auto",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1647698848537-c72bd8049ed0?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 42000,
   },
 ];

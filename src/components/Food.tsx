@@ -61,6 +61,7 @@ const Food = () => {
               alt={item.name}
               className="w-full h-[150px] sm:h-[200px] object-cover rounded-t-lg"
             />
+
             <div className="flex flex-col p-4">
               <div className="flex justify-between">
                 <p className="font-bold text-sm sm:text-base md:text-lg">
@@ -71,6 +72,7 @@ const Food = () => {
                 </span>
               </div>
             </div>
+
           </div>
         ))}
       </div>
@@ -86,22 +88,6 @@ const Food = () => {
   );
 };
 
-<style jsx>{`
-  .custom-select {
-    appearance: none; /* Remove default arrow */
-    padding-right: 2.5rem; /* Add space for custom arrow */
-    position: relative;
-  }
 
-  .custom-select::after {
-    content: '▼'; /* Customize the arrow */
-    position: absolute;
-    right: 4rem; /* Adjust the spacing from the right edge */
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1rem;
-    color: #ff8c00; /* Match your text color */
-  }
-`}</style>
 
 export default Food;
