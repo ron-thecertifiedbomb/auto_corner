@@ -3,7 +3,7 @@ import FilterControls from "./components/FilterControls/FilterControls";
 import List from "./components/List/List";
 import Navbar from "./components/Navbar";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
-import useCarFilter from "./hooks/CarSelectionHook";
+import useCarHook from "./hooks/CarSelectionHook";
 
 const Entry = () => {
   const {
@@ -15,7 +15,7 @@ const Entry = () => {
     openCarDetails,
     selectedItem,
     setIsOpen,
-  } = useCarFilter();
+  } = useCarHook();
 
   return (
     <>
@@ -33,7 +33,6 @@ const Entry = () => {
         getButtonClass={getButtonClass}
         handleSortPrice={handleSortPrice}
       />
-
       <List item={cars} />
     </>
   );

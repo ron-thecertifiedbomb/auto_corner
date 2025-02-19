@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CartItem } from "../types";
 import { data } from "../utils/cars";
 import { filterAndSortData } from "../utils/FilterAndSort";
-const useCarFilter = () => {
+const useCarHook = () => {
   const [cars, setCars] = useState(data);
   const [activeCategory, setActiveCategory] = useState<string | null>('All');
   const [sortOrder, setSortOrder] = useState("default");
@@ -45,4 +45,4 @@ const useCarFilter = () => {
   };
 };
 
-export default useCarFilter;
+export default useCarHook;
