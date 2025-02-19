@@ -1,23 +1,21 @@
 import { useAtom } from "jotai";
 import { cartAtom } from "../store/atom";
-import { Product } from "../types/";
+import { CartItemQuantity } from "../types";
 
 // Hook for cart actions
 export const useCart = () => {
   const [cart, setCart] = useAtom(cartAtom);
 
   // Add or update item quantity
-  const addToCart = (product: Product) => {
+  const addToCart = (car: CartItemQuantity) => {
     setCart((prevCart) => {
-      const existingItem = prevCart.find((item) => item.id === product.id);
+      const existingItem = prevCart.find((item) => item.id === car.id);
       if (existingItem) {
         return prevCart.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
+          item.id === car.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       } else {
-        return [...prevCart, { ...product, quantity: 1 }];
+        return [...prevCart, { ...car, quantity: 1 }];
       }
     });
   };

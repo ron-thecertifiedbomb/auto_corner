@@ -1,14 +1,14 @@
-import SearchBar from "../SearchBar";
+import RowLayout from "../RowLayout/RowLayout";
+import SearchBar from "../Search/SearchBar";
 
+import Title from "./Layout/TitleSection";
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4 flex-col lg:flex-row">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
-        Lizard Interactive <span className="font-bold">Auto Corner</span>
-      </h1>
-      <SearchBar />
-    </div>
+ <RowLayout className="max-w-[1640px] mx-auto flex flex-col md:flex-row justify-between p-2">
+  <Title />
+  <SearchBar />
+</RowLayout>
   );
 };
 

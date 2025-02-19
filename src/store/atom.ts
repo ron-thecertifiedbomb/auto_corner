@@ -1,5 +1,5 @@
 import { atomWithStorage } from "jotai/utils";
-import { CartItem } from "../types";
+import {  CartItemQuantity } from "../types";
 
 // Define cart atom with type safety
-export const cartAtom = atomWithStorage<CartItem[]>("cart", []);
+export const cartAtom = atomWithStorage<CartItemQuantity[]>("cart", []);

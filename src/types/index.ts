@@ -1,7 +1,3 @@
-
-
-
-
 export interface CarItem {
   id: number;
   make: string;
@@ -15,12 +11,9 @@ export interface CarItem {
   price: number;
 }
 
-
-
 export interface CartItemQuantity extends CarItem {
   quantity: number;
 }
-
 
 export interface CarFeatures extends CarItem {
   features: string[];

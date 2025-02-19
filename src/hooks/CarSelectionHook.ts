@@ -8,11 +8,8 @@ const useCarHook = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>('All');
   const [sortOrder, setSortOrder] = useState("default");
   const [selectedItem, setSelectedItem] = useState<CarItem | undefined>();
-
-  
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(activeCategory)
   const handleSortPrice = (type: string) => {
     setSortOrder(type);
     setCars(filterAndSortData(data, activeCategory, type));
