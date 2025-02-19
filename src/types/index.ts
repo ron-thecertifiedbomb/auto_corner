@@ -1,16 +1,3 @@
-export interface Product {
-  id: number;
-  name: string;
-  category: string;
-  image: string;
-  price: string;
-  description: string;
-  availability: string;
-}
-
-export interface CartItem extends Product {
-  quantity: number;
-}
 
 
 export interface Product {
@@ -29,9 +16,16 @@ export interface CarItem {
   make: string;
   model: string;
   year: number;
+  type: string;
   description: string;
   features: string[];
   availability: string;
   image: string;
   price: number;
+}
+
+
+
+export interface CartItem extends Product {
+  quantity: number;
 }

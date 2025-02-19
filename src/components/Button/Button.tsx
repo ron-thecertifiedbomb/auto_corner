@@ -1,17 +1,18 @@
 import React from "react";
 
 interface ButtonProps {
+  filterType: (type: string | null) => void;
   label: string;
-  category: string | null;
-  onClick: (category: string | null) => void;
-  getButtonClass: (category: string | null) => string;
+  type: string | null;
+  getButtonClass: (type: string | null) => string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, category, onClick, getButtonClass }) => {
+const Button: React.FC<ButtonProps> = ({ label, type, filterType, getButtonClass }) => {
   return (
     <button
-      onClick={() => onClick(category)}
-      className={getButtonClass(category)}
+    key={type}
+      onClick={() => { filterType(type === "All" ? null : type);}}
+      className={getButtonClass(type)}
     >
       {label}
     </button>

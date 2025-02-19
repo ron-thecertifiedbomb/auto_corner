@@ -7,7 +7,8 @@ export const data: CarItem[] = [
     model: "Camry",
     year: 2022,
     type: "Sedan",
-    description: "A reliable and fuel-efficient sedan with a sleek design and advanced safety features.",
+    description:
+      "A reliable and fuel-efficient sedan with a sleek design and advanced safety features.",
     features: [
       "Leather seats",
       "Sunroof",
@@ -16,7 +17,8 @@ export const data: CarItem[] = [
       "Adaptive cruise control",
     ],
     availability: "In Stock",
-    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 28000,
   },
   {
@@ -25,7 +27,8 @@ export const data: CarItem[] = [
     model: "Mustang",
     year: 2021,
     type: "Coupe",
-    description: "A powerful and iconic muscle car with a roaring V8 engine and sporty design.",
+    description:
+      "A powerful and iconic muscle car with a roaring V8 engine and sporty design.",
     features: [
       "V8 engine",
       "Sport-tuned suspension",
@@ -34,7 +37,8 @@ export const data: CarItem[] = [
       "Touchscreen infotainment",
     ],
     availability: "In Stock",
-    image: "https://images.unsplash.com/photo-1603553329474-99f95f35394f?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1603553329474-99f95f35394f?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 45000,
   },
   {
@@ -43,7 +47,8 @@ export const data: CarItem[] = [
     model: "Model 3",
     year: 2023,
     type: "Sedan",
-    description: "A fully electric sedan with cutting-edge technology and impressive performance.",
+    description:
+      "A fully electric sedan with cutting-edge technology and impressive performance.",
     features: [
       "Autopilot",
       "Electric powertrain",
@@ -52,7 +57,8 @@ export const data: CarItem[] = [
       "Over-the-air updates",
     ],
     availability: "In Stock",
-    image: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 50000,
   },
   {
@@ -61,7 +67,8 @@ export const data: CarItem[] = [
     model: "Wrangler",
     year: 2022,
     type: "SUV",
-    description: "An off-road capable SUV designed for adventure and rugged terrain.",
+    description:
+      "An off-road capable SUV designed for adventure and rugged terrain.",
     features: [
       "4x4 drivetrain",
       "Removable doors and roof",
@@ -70,7 +77,8 @@ export const data: CarItem[] = [
       "Touchscreen infotainment",
     ],
     availability: "Limited Stock",
-    image: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 39000,
   },
   {
@@ -79,7 +87,8 @@ export const data: CarItem[] = [
     model: "X5",
     year: 2023,
     type: "SUV",
-    description: "A luxury SUV with high-performance capabilities and premium features.",
+    description:
+      "A luxury SUV with high-performance capabilities and premium features.",
     features: [
       "All-wheel drive",
       "Leather interior",
@@ -88,7 +97,8 @@ export const data: CarItem[] = [
       "Premium sound system",
     ],
     availability: "In Stock",
-    image: "https://images.unsplash.com/photo-1609184166822-bd1f1b991a06?q=80&w=2699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1609184166822-bd1f1b991a06?q=80&w=2699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 65000,
   },
   {
@@ -97,7 +107,8 @@ export const data: CarItem[] = [
     model: "Silverado",
     year: 2022,
     type: "Truck",
-    description: "A tough and reliable pickup truck with high towing capacity and durability.",
+    description:
+      "A tough and reliable pickup truck with high towing capacity and durability.",
     features: [
       "V8 engine",
       "4x4 capability",
@@ -106,7 +117,66 @@ export const data: CarItem[] = [
       "Infotainment system with Apple CarPlay & Android Auto",
     ],
     availability: "In Stock",
-    image: "https://images.unsplash.com/photo-1647698848537-c72bd8049ed0?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1647698848537-c72bd8049ed0?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 42000,
+  },
+  // Additional Cars
+  {
+    id: 7,
+    make: "Honda",
+    model: "Civic",
+    year: 2023,
+    type: "Sedan",
+    description:
+      "A compact, efficient sedan known for its reliability and modern features.",
+    features: [
+      "Fuel efficiency",
+      "Sporty design",
+      "Advanced safety features",
+      "User-friendly infotainment system",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1594070319944-7c0cbebb6f58?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 23000,
+  },
+  {
+    id: 8,
+    make: "Audi",
+    model: "A4",
+    year: 2023,
+    type: "Sedan",
+    description:
+      "A luxury sedan combining performance with sophisticated design and advanced technology.",
+    features: [
+      "Quattro all-wheel drive",
+      "Premium interior",
+      "Advanced infotainment system",
+      "High safety ratings",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1614328467603-0444b9fcfc47?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 48000,
+  },
+  {
+    id: 9,
+    make: "Mercedes-Benz",
+    model: "C-Class",
+    year: 2023,
+    type: "Sedan",
+    description:
+      "A refined luxury sedan offering dynamic performance and cutting-edge technology.",
+    features: [
+      "Luxurious interior",
+      "Smooth ride",
+      "Innovative technology",
+      "Outstanding performance",
+    ],
+    availability: "In Stock",
+    image:
+      "https://images.unsplash.com/photo-1630596369706-57eaf9ba7cae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 52000,
   },
 ];
