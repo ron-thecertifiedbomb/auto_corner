@@ -16,11 +16,11 @@ const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
 
   return (
     <div
-      className="fixed inset-0 bg-opacity-90 backdrop-blur-md flex flex-col justify-center items-center z-50"
+      className="fixed inset-0 bg-opacity-50 backdrop-blur-md flex flex-col justify-center items-center z-50"
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="bg-white p-8 rounded-lg shadow-lg w-130 relative flex flex-col"
+        className="bg-white p-8 rounded-lg shadow-lg max-w-180 relative flex flex-col"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
       >
         <ImageHolder src={item?.image} />
