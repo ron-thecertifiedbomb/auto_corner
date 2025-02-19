@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ label, type, filterType, getButtonClass
   return (
     <button
     key={type}
-      onClick={() => { filterType(type === "All" ? null : type);}}
+      onClick={() => {filterType(type);}}
       className={getButtonClass(type)}
     >
       {label}

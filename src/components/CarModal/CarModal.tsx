@@ -8,8 +8,8 @@ import Text from "../Text/Text";
 type CarDetailsModalType = {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
-  item: CarItem
-}
+  item?: CarItem;
+};
 
 const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
   if (!isOpen) return null;
@@ -26,8 +26,13 @@ const CarModal = ({ item, setIsOpen, isOpen }: CarDetailsModalType) => {
         <ImageHolder src={item?.image} />
         <CardTitle item={item} />
         <CardDescription item={item} />
-        <Text item={"Technical Specifactions:"} variant="p" margin='mb-2' bold />
-        <CarFeaturesList  item={item} />
+        <Text
+          item={"Technical Specifactions:"}
+          variant="p"
+          margin="mb-2"
+          bold
+        />
+        <CarFeaturesList item={item} />
       </div>
     </div>
   );

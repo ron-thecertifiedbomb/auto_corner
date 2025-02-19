@@ -8,8 +8,11 @@ const useCarHook = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>('All');
   const [sortOrder, setSortOrder] = useState("default");
   const [selectedItem, setSelectedItem] = useState<CarItem | undefined>();
+
+  
   const [isOpen, setIsOpen] = useState(false);
 
+  console.log(activeCategory)
   const handleSortPrice = (type: string) => {
     setSortOrder(type);
     setCars(filterAndSortData(data, activeCategory, type));
@@ -22,7 +25,7 @@ const useCarHook = () => {
 
   const getButtonClass = (type: string | null) =>
     `m-1 px-3 py-1 border rounded-lg transition ${
-      activeCategory === type
+      activeCategory === type 
         ? "bg-black text-white"
         : "border-black text-black-600 hover:bg-black  hover:text-white"
     }`;

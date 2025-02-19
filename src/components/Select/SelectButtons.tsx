@@ -7,6 +7,7 @@ interface SelectButtonsProps {
 }
 
 const SelectButtons = ({ filterType, getButtonClass }: SelectButtonsProps) => {
+  
   const uniqueCarTypes = [...new Set(data.map((car) => car.type))];
   const carTypesList = ["All", ...uniqueCarTypes];
 

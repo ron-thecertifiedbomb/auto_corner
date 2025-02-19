@@ -9,9 +9,10 @@ export const filterAndSortData = (
   type: string | null,
   order: string
 ): CarItem[] => {
-  let filteredData = type
-    ? data.filter((item) => item.type === type)
-    : [...data];
+  const filteredData =
+  type === "All" || type === null
+    ? [...data]
+    : data.filter((item) => item.type === type);
 
   if (order === "highToLow") {
     filteredData.sort(
