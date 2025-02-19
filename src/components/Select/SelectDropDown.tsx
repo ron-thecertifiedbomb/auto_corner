@@ -3,7 +3,7 @@ interface SelectDropDownProps {
 }
 
 const SelectDropDown = ({ handleSortPrice }: SelectDropDownProps) => {
-  // Create an array of option objects for easier maintenance and readability
+  
   const options = [
     { value: "default", label: "Default" },
     { value: "lowToHigh", label: "Price: Low to High" },
