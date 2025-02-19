@@ -11,7 +11,7 @@ const SelectButtons = ({ filterType, getButtonClass }: SelectButtonsProps) => {
   const carTypesList = ["All", ...uniqueCarTypes];
 
   return (
-    <div className="flex flex-wrap w-[500px]">
+    <div className="flex w-[500px]">
       {carTypesList.map((carType) => (
         <Button
         type={carType}
