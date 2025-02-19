@@ -4,14 +4,14 @@ import { data } from "../utils/cars";
 import { filterAndSortData } from "../utils/FilterAndSort";
 const useCarFilter = () => {
   const [cars, setCars] = useState(data);
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<string | null>('All');
   const [sortOrder, setSortOrder] = useState("default");
   const [selectedItem, setSelectedItem] = useState<CartItem | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSortChange = (order: string) => {
-    setSortOrder(order);
-    setCars(filterAndSortData(data, activeCategory, order));
+  const handleSortPrice = (sort: string) => {
+    setSortOrder(sort);
+    setCars(filterAndSortData(data, activeCategory, sort));
   };
 
   const filterType = (type: string | null) => {
@@ -19,14 +19,14 @@ const useCarFilter = () => {
     setCars(filterAndSortData(data, type, sortOrder));
   };
 
-  const getButtonClass = (category: string | null) =>
+  const getButtonClass = (type: string | null) =>
     `m-1 px-3 py-1 border rounded-lg transition ${
-      activeCategory === category
-        ? "bg-orange-600 text-white"
-        : "border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+      activeCategory === type
+        ? "bg-black text-white"
+        : "border-black text-black-600 hover:bg-black  hover:text-white"
     }`;
 
-  const openFoodDetails = (item: CartItem) => {
+  const openCarDetails = (item: CartItem) => {
     setSelectedItem(item);
     setIsOpen(true);
   };
@@ -37,10 +37,10 @@ const useCarFilter = () => {
     sortOrder,
     selectedItem,
     isOpen,
-    handleSortChange,
+    handleSortPrice,
     filterType,
     getButtonClass,
-    openFoodDetails,
+    openCarDetails,
     setIsOpen,
   };
 };
