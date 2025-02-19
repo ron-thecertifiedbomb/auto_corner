@@ -14,7 +14,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   handleSortPrice,
 }) => {
   return (
-    <div className="max-w-[1640px] mx-auto flex justify-between items-start flex-col lg:flex-row">
+    <div className="max-w-[1640px] mx-auto flex  justify-between items-start flex-col-reverse lg:flex-row">
   <SelectButtons filterType={filterType} getButtonClass={getButtonClass} />
   <SelectDropDown handleSortPrice={handleSortPrice} />
 </div>

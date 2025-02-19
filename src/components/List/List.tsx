@@ -10,7 +10,7 @@ interface ListProps<T> {
 
 const List = <T,>({ items, openCarDetails, ItemComponent }: ListProps<T>) => {
   return (
-    <div className="max-w-[1640px] mx-auto w-full max-w-4xl h-120 pt-4">
+    <div className="max-w-[1640px] mx-auto w-full h-120 pt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item, index) => (
           <ItemComponent
