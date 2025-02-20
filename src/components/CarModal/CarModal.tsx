@@ -7,6 +7,7 @@ import Text from "../Text/Text";
 
 type CarDetailsModalType = {
   isOpen: boolean;
+  // eslint-disable-next-line no-unused-vars
   setIsOpen: (isOpen: boolean) => void;
   item?: CarItem;
 };

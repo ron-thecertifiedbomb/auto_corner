@@ -4,6 +4,7 @@ import Text from "../Text/Text";
 import { CarItem } from "../../types";
 
 interface CardProps {
+  // eslint-disable-next-line no-unused-vars
   openCarDetails?: (item: CarItem) => void;
   item: CarItem;
 }

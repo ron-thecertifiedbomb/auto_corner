@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { images } from "../../utils/image";
 import CarouselImage from "./Carouselmage";
 import CarouselButton from "./CarouselButton";
 import CarouselDots from "./CarouselDots";
+import React from "react";
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);

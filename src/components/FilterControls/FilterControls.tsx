@@ -1,10 +1,13 @@
-import React from "react";
+
 import SelectButtons from "../Select/SelectButtons";
 import SelectDropDown from "../Select/SelectDropDown";
-
+import React from "react";
 interface FilterControlsProps {
+  // eslint-disable-next-line no-unused-vars
   filterType: (type: string | null) => void;
+  // eslint-disable-next-line no-unused-vars
   getButtonClass: (type: string | null) => string;
+  // eslint-disable-next-line no-unused-vars
   handleSortPrice: (type: string) => void;
 }
 

@@ -1,9 +1,9 @@
-// CarouselDots.tsx
 import React from "react";
 
 interface CarouselDotsProps {
   imagesLength: number;
   currentIndex: number;
+  // eslint-disable-next-line no-unused-vars
   onClick: (index: number) => void;
 }
 

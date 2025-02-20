@@ -2,7 +2,9 @@ import { data } from "../../utils/cars";
 import Button from "../Button/Button";
 
 interface SelectButtonsProps {
+  // eslint-disable-next-line no-unused-vars
   filterType: (type: string | null) => void;
+  // eslint-disable-next-line no-unused-vars
   getButtonClass: (type: string | null) => string;
 }
 

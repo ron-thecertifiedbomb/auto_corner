@@ -4,7 +4,9 @@ import SearchBar from "../Search/SearchBar";
 
 import Title from "./Layout/TitleSection";
 type NavbarType = {
+    // eslint-disable-next-line no-unused-vars
   setIsOpen: (isOpen: boolean) => void;
+    // eslint-disable-next-line no-unused-vars
   openCarDetails?: (item: CarItem) => void;
  
 };

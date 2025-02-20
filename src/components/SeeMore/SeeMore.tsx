@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import RowLayout from "../RowLayout/RowLayout";
 import Text from "../Text/Text";
-
+import React from "react";
 interface SeeMoreProps {
   seeMore: boolean;
+  // eslint-disable-next-line no-unused-vars
   setSeeMore: (value: boolean) => void;
 }
 

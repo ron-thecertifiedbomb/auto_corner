@@ -5,7 +5,6 @@ import FilterControls from "./components/FilterControls/FilterControls";
 import List from "./components/List/List";
 import Navbar from "./components/NavBar/Navbar";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
-import SeeMore from "./components/SeeMore/SeeMore";
 import useCarHook from "./hooks/CarSelectionHook";
 
 const Entry = () => {

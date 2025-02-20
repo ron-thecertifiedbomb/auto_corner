@@ -5,7 +5,9 @@ import { data } from "../../utils/cars";
 import SearchResults from "./SearchResult";
 
 type SearchBarType = {
+  // eslint-disable-next-line no-unused-vars
   setIsOpen: (isOpen: boolean) => void;
+  // eslint-disable-next-line no-unused-vars
   openCarDetails?: (item: CarItem) => void;
 };
 

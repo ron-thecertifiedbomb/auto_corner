@@ -4,7 +4,9 @@ import { CarItem } from "../../types";
 interface SearchResultsProps<T> {
   items: T[];
   searchQuery: string;
+  // eslint-disable-next-line no-unused-vars
   openCarDetails?: (item: T) => void;
+  // eslint-disable-next-line no-unused-vars
   setSearchQuery: (query: string) => void;
 
 }
