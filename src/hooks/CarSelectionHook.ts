@@ -29,8 +29,8 @@ const useCarHook = () => {
 
   const openCarDetails = (item: CarItem) => {
     setSelectedItem(item);
-    console.log(isOpen)
-    console.log('item', item)
+    setIsOpen(!isOpen);
+
   };
 
   return {

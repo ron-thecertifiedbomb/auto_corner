@@ -4,15 +4,12 @@ import { CarItem } from "../../types";
 import { data } from "../../utils/cars";
 import SearchResults from "./SearchResult";
 
-
 type SearchBarType = {
-
   setIsOpen: (isOpen: boolean) => void;
   openCarDetails?: (item: CarItem) => void;
 };
 
-const SearchBar = ({ setIsOpen, openCarDetails}: SearchBarType) => {
-
+const SearchBar = ({ setIsOpen, openCarDetails }: SearchBarType) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState<CarItem[]>([]);
 
@@ -40,7 +37,12 @@ const SearchBar = ({ setIsOpen, openCarDetails}: SearchBarType) => {
           value={searchQuery}
         />
         <AiOutlineSearch size={25} />
-        <SearchResults items={filteredProducts} searchQuery={searchQuery} openCarDetails={openCarDetails} setSearchQuery={setSearchQuery} setIsOpen={setIsOpen} />
+        <SearchResults
+          items={filteredProducts}
+          searchQuery={searchQuery}
+          openCarDetails={openCarDetails}
+          setSearchQuery={setSearchQuery}
+        />
       </div>
     </>
   );

@@ -6,7 +6,7 @@ interface SearchResultsProps<T> {
   searchQuery: string;
   openCarDetails?: (item: T) => void;
   setSearchQuery: (query: string) => void;
-  setIsOpen: (isOpen: boolean) => void;
+
 }
 
 const SearchResults = <T extends CarItem>({
@@ -14,7 +14,7 @@ const SearchResults = <T extends CarItem>({
   searchQuery,
   openCarDetails,
   setSearchQuery,
-  setIsOpen,
+
   
   
 }: SearchResultsProps<T>) => {
@@ -22,7 +22,7 @@ const SearchResults = <T extends CarItem>({
   const handleSelectSearch = (item: T) => {
     if (openCarDetails) {
       openCarDetails(item);
-      setIsOpen(true)
+    
     }
     setSearchQuery("");
   };
