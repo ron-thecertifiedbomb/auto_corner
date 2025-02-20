@@ -8,11 +8,9 @@ import React from "react";
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
-
 
   const prevSlide = () => {
     setCurrentIndex(
@@ -20,17 +18,16 @@ const Carousel: React.FC = () => {
     );
   };
 
-
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000); 
+    const interval = setInterval(nextSlide, 7000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []); 
+  }, []);
 
   return (
-    <div className="relative max-w-[1640px] mx-auto bg-white rounded-lg shadow-lg w-full max-w-4xl h-120">
+    <div className="relative max-w-4xl mx-auto bg-white rounded-lg shadow-lg w-full lg:max-w-[1640px] h-120">
       <CarouselImage
         src={images[currentIndex]}
         alt={`carousel-slide-${currentIndex}`}
