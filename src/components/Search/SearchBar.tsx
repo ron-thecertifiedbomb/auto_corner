@@ -9,7 +9,7 @@ type SearchBarType = {
   openCarDetails?: (item: CarItem) => void;
 };
 
-const SearchBar = ({ setIsOpen, openCarDetails }: SearchBarType) => {
+const SearchBar = ({ openCarDetails }: SearchBarType) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState<CarItem[]>([]);
 
