@@ -7,7 +7,6 @@ import React from "react";
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
